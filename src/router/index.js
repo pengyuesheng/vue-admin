@@ -29,16 +29,14 @@ export const aysncRoutes = [
         meta: {
           roles: ["admin"]
         },
-        children: [
-          {
-            path: "page1",
-            component: () => import("@/views/About.vue"),
-            name: "page1",
-            meta: {
-              roles: ["admin"]
-            }
-          }
-        ]
+      },
+      {
+        path: "page1",
+        component: () => import("@/views/Page.vue"),
+        name: "page1",
+        meta: {
+          roles: ["admin"]
+        }
       }
     ]
   }
